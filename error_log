@@ -1,0 +1,25 @@
+[17-May-2021 04:39:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY id DESC' at line 1 in /home/s334192/public_html/classes/Database.php:27
+Stack trace:
+#0 /home/s334192/public_html/classes/Database.php(27): PDO->prepare('SELECT * FROM a...')
+#1 /home/s334192/public_html/Controllers/CommentController.php(25): Database::select(Array)
+#2 /home/s334192/public_html/Routes.php(20): CommentController::index()
+#3 /home/s334192/public_html/classes/Route.php(22): {closure}()
+#4 /home/s334192/public_html/classes/Route.php(22): Closure->__invoke()
+#5 /home/s334192/public_html/Routes.php(21): Route::set('dashboard/comme...', Object(Closure))
+#6 /home/s334192/public_html/index.php(5): require_once('/home/s334192/p...')
+#7 {main}
+  thrown in /home/s334192/public_html/classes/Database.php on line 27
+[17-May-2021 04:39:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY id DESC' at line 1 in /home/s334192/public_html/classes/Database.php:27
+Stack trace:
+#0 /home/s334192/public_html/classes/Database.php(27): PDO->prepare('SELECT * FROM a...')
+#1 /home/s334192/public_html/Controllers/CommentController.php(25): Database::select(Array)
+#2 /home/s334192/public_html/Routes.php(20): CommentController::index()
+#3 /home/s334192/public_html/classes/Route.php(22): {closure}()
+#4 /home/s334192/public_html/classes/Route.php(22): Closure->__invoke()
+#5 /home/s334192/public_html/Routes.php(21): Route::set('dashboard/comme...', Object(Closure))
+#6 /home/s334192/public_html/index.php(5): require_once('/home/s334192/p...')
+#7 {main}
+  thrown in /home/s334192/public_html/classes/Database.php on line 27
+[20-May-2021 14:24:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/s334192/public_html/Views/includes/head.php:1) in /home/s334192/public_html/helpers.php on line 102
+[20-May-2021 14:24:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/s334192/public_html/Views/includes/head.php:1) in /home/s334192/public_html/helpers.php on line 102
+[20-May-2021 14:25:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/s334192/public_html/Views/includes/head.php:1) in /home/s334192/public_html/helpers.php on line 102
